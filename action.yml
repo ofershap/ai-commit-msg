@@ -1,4 +1,4 @@
-name: "AI Commit Message"
+name: "AI PR Commit Summary"
 description: "Generate AI-powered commit messages and PR summaries using OpenAI or Anthropic"
 author: "Ofer Shapira"
 
