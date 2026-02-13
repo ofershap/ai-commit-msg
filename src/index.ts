@@ -10,7 +10,10 @@ async function run(): Promise<void> {
     const apiKey = core.getInput("api-key", { required: true });
     const model = core.getInput("model") || undefined;
     const mode = core.getInput("mode") as "pr-comment" | "commit-summary";
-    const maxDiffLength = parseInt(core.getInput("max-diff-length"), 10);
+    const maxDiffLength = Math.max(
+      1000,
+      parseInt(core.getInput("max-diff-length"), 10) || 10000,
+    );
     const language = core.getInput("language");
     const customPrompt = core.getInput("custom-prompt") || undefined;
     const githubToken = core.getInput("github-token");
