@@ -107,3 +107,13 @@ That's it. Every PR gets an AI-generated summary comment.
 ## License
 
 [MIT](LICENSE) &copy; [Ofer Shapira](https://github.com/ofershap)
+
+---
+
+### Other projects by [@ofershap](https://github.com/ofershap)
+
+- [`ts-nano-event`](https://github.com/ofershap/ts-nano-event) — Typed event emitter in ~200 bytes
+- [`use-stepper`](https://github.com/ofershap/use-stepper) — React hook for multi-step forms and wizards
+- [`hebrew-slugify`](https://github.com/ofershap/hebrew-slugify) — Slugify Hebrew text for URLs
+- [`env-guard`](https://github.com/ofershap/env-guard) — Validate .env files against a schema
+- [`awesome-hebrew-dev`](https://github.com/ofershap/awesome-hebrew-dev) — Curated list of Hebrew developer resources
