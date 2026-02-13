@@ -5,6 +5,10 @@
 
 > GitHub Action that generates AI-powered commit messages and PR summaries using OpenAI or Anthropic.
 
+<p align="center">
+  <img src="assets/demo.gif" alt="ai-commit-msg demo" width="600" />
+</p>
+
 ## Why
 
 - **Zero install** — runs as a GitHub Action, no CLI or npm package needed
