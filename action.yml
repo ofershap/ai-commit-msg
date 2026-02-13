@@ -1,0 +1,46 @@
+name: "AI Commit Message"
+description: "Generate AI-powered commit messages and PR summaries using OpenAI or Anthropic"
+author: "Ofer Shapira"
+
+branding:
+  icon: "message-circle"
+  color: "purple"
+
+inputs:
+  provider:
+    description: "AI provider: openai or anthropic"
+    required: false
+    default: "openai"
+  api-key:
+    description: "API key for the AI provider"
+    required: true
+  model:
+    description: "Model to use (default: gpt-4o-mini for openai, claude-sonnet-4-20250514 for anthropic)"
+    required: false
+  mode:
+    description: "Action mode: pr-comment (comment on PR) or commit-summary (output only)"
+    required: false
+    default: "pr-comment"
+  max-diff-length:
+    description: "Maximum diff length in characters (truncated if longer)"
+    required: false
+    default: "10000"
+  language:
+    description: "Language for the generated message"
+    required: false
+    default: "english"
+  custom-prompt:
+    description: "Custom prompt to append to the system message"
+    required: false
+  github-token:
+    description: "GitHub token for posting PR comments (defaults to GITHUB_TOKEN)"
+    required: false
+    default: ${{ github.token }}
+
+outputs:
+  message:
+    description: "The generated commit message / PR summary"
+
+runs:
+  using: "node20"
+  main: "dist/index.js"
