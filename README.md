@@ -1,9 +1,19 @@
 # ai-commit-msg
 
+[![GitHub Marketplace](https://img.shields.io/badge/Marketplace-ai--commit--msg-blue?logo=github)](https://github.com/marketplace/actions/ai-commit-msg)
 [![CI](https://github.com/ofershap/ai-commit-msg/actions/workflows/ci.yml/badge.svg)](https://github.com/ofershap/ai-commit-msg/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-> GitHub Action that generates AI-powered commit messages and PR summaries using OpenAI or Anthropic.
+A GitHub Action that reads your PR diff and writes a Conventional Commits summary — so you don't have to.
+
+```yaml
+- uses: ofershap/ai-commit-msg@v1
+  with:
+    api-key: ${{ secrets.OPENAI_API_KEY }}
+# → Posts a summary comment on every PR, updates on new pushes
+```
+
+> Supports OpenAI and Anthropic. Custom prompts, language selection, and model override.
 
 ![Demo](assets/demo.gif)
 
@@ -110,12 +120,3 @@ That's it. Every PR gets an AI-generated summary comment.
 
 [MIT](LICENSE) &copy; [Ofer Shapira](https://github.com/ofershap)
 
----
-
-### Other projects by [@ofershap](https://github.com/ofershap)
-
-- [`ts-nano-event`](https://github.com/ofershap/ts-nano-event) — Typed event emitter in ~200 bytes
-- [`use-stepper`](https://github.com/ofershap/use-stepper) — React hook for multi-step forms and wizards
-- [`hebrew-slugify`](https://github.com/ofershap/hebrew-slugify) — Slugify Hebrew text for URLs
-- [`env-guard`](https://github.com/ofershap/env-guard) — Validate .env files against a schema
-- [`awesome-hebrew-dev`](https://github.com/ofershap/awesome-hebrew-dev) — Curated list of Hebrew developer resources
