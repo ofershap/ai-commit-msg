@@ -126,4 +126,3 @@ That's it. Every PR gets an AI-generated summary comment.
 ## License
 
 [MIT](LICENSE) &copy; [Ofer Shapira](https://github.com/ofershap)
-
