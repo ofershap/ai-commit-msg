@@ -1,6 +1,6 @@
 {
   "name": "ai-commit-msg",
-  "version": "0.0.0-development",
+  "version": "1.0.0",
   "description": "GitHub Action to generate AI-powered commit messages and PR summaries",
   "type": "module",
   "main": "dist/index.js",
