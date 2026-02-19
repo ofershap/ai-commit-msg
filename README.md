@@ -1,10 +1,10 @@
-# ai-commit-msg
+# AI Commit Msg — Auto-Generate Conventional Commit Messages from PR Diffs
 
 [![GitHub Marketplace](https://img.shields.io/badge/Marketplace-ai--commit--msg-blue?logo=github)](https://github.com/marketplace/actions/ai-commit-msg)
 [![CI](https://github.com/ofershap/ai-commit-msg/actions/workflows/ci.yml/badge.svg)](https://github.com/ofershap/ai-commit-msg/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-A GitHub Action that reads your PR diff and writes a Conventional Commits summary — so you don't have to.
+A GitHub Action that reads your PR diff and writes a Conventional Commits summary — so you don't have to. Supports OpenAI and Anthropic.
 
 ```yaml
 - uses: ofershap/ai-commit-msg@v1
@@ -15,7 +15,7 @@ A GitHub Action that reads your PR diff and writes a Conventional Commits summar
 
 > Supports OpenAI and Anthropic. Custom prompts, language selection, and model override.
 
-![Demo](assets/demo.gif)
+![AI commit message demo — auto-generated Conventional Commits summary on a GitHub PR](assets/demo.gif)
 
 ## Why
 
